@@ -1,6 +1,5 @@
 import React from 'react'
 import { ParticlesBackground } from './components/particlesBackground/index'
-import { Layout } from './components/layout'
 import { BrowserRouter , Route, Routes } from 'react-router-dom'
 import { Home } from './container/Home'
 import { AboutUs } from './container/AboutUs'

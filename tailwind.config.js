@@ -16,7 +16,9 @@ module.exports = {
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      
+      footer:{
+        background:"rgba(0,0,0,0.1)"
+      },
       black: {
         dark: colors.black,
         medium: '#100024'
