@@ -1,6 +1,7 @@
 import React from 'react'
 import {ParticlesBackground} from './components/particlesBackground/index'
 import {Nav} from './components/nav/index'
+import {Footer} from './components/footer/index'
 function App() {
     return (
         <div>
@@ -8,6 +9,7 @@ function App() {
                 <ParticlesBackground />
             </div>
             <Nav />
+            <Footer/>
         </div>
     )
 }
