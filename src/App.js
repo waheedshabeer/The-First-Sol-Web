@@ -1,13 +1,21 @@
 import React from 'react'
-import {ParticlesBackground} from './components/particlesBackground/index'
-import {Nav} from './components/nav/index'
+import { ParticlesBackground } from './components/particlesBackground/index'
+import { Layout } from './components/layout'
+import { BrowserRouter , Route, Routes } from 'react-router-dom'
+import { Home } from './container/Home'
+import { AboutUs } from './container/AboutUs'
 function App() {
     return (
         <div>
             <div className="bg-fixed">
                 <ParticlesBackground />
             </div>
-            <Nav />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about-us" element={<AboutUs />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     )
 }
