@@ -55,7 +55,7 @@ export const ParticlesBackground = () => {
                         color: '#4DBCE9',
                         distance: 200,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 1,
                         width: 1,
                     },
                     collisions: {
@@ -80,11 +80,11 @@ export const ParticlesBackground = () => {
                         value: 0.5,
                     },
                     shape: {
-                        type: 'arrow',
+                        type: 'circle',
                     },
                     size: {
                         random: true,
-                        value: 5,
+                        value: 1,
                     },
                 },
                 detectRetina: true,
