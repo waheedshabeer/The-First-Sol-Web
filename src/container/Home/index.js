@@ -3,12 +3,12 @@ import {ASSETS} from '../../Assets/Path'
 import {Layout} from '../../components/layout'
 import {AboutUs} from '../AboutUs'
 import {OurPortfolio} from '../Portfolio'
-import {Services} from '../Services'
+import {ServiceHome} from '../../container/Services/components/services'
 export const Home = () => {
     return (
         <Layout>
             <div className="flex min-h-screen ">
-                <div className='flex items-center py-4 h-96'>
+                <div className="flex items-center py-4 h-96">
                     <div className="w-1/2">
                         <div className="text-xl sm:text-2xl md:text-5xl lg:text-6xl text-aqua-normal">
                             Hi, We Welcome You At The First Sol
@@ -24,7 +24,7 @@ export const Home = () => {
                 </div>
             </div>
             <AboutUs />
-            <Services />
+            <ServiceHome/>
             <OurPortfolio />
         </Layout>
     )
