@@ -4,9 +4,9 @@ import {SERVICES} from './Constant'
 export const Services = () => {
     return (
         <div>
-            <div className="space-y-4">
+            <div className="space-y-8">
                 <div className="flex justify-center">
-                    <div className="text-xl sm:text-2xl md:text-5xl lg:text-6xl text-aqua-normal Poppins-Regular">
+                    <div className="text-xl sm:text-2xl md:text-5xl lg:text-5xl text-aqua-normal Poppins-Regular">
                         Services
                     </div>
                 </div>
