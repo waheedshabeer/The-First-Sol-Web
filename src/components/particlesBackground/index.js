@@ -15,14 +15,14 @@ export const ParticlesBackground = () => {
             options={{
                 background: {
                     color: {
-                        value: '#fff',
+                        value: '#0000',
                     },
                 },
                 fpsLimit: 120,
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: true,
+                            enable: false,
                             mode: 'push',
                         },
                         onHover: {
@@ -35,15 +35,15 @@ export const ParticlesBackground = () => {
                         bubble: {
                             distance: 400,
                             duration: 2,
-                            opacity: 0.8,
-                            size: 40,
+                            opacity: 1,
+                            size: 50,
                         },
                         push: {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 200,
-                            duration: 0.4,
+                            distance: 100,
+                            duration: 0.9,
                         },
                     },
                 },
@@ -55,8 +55,8 @@ export const ParticlesBackground = () => {
                         color: '#4DBCE9',
                         distance: 200,
                         enable: true,
-                        opacity: 1,
-                        width: 1,
+                        opacity: 2,
+                        width: 0.5,
                     },
                     collisions: {
                         enable: true,
@@ -66,21 +66,21 @@ export const ParticlesBackground = () => {
                         enable: true,
                         outMode: 'bounce',
                         random: false,
-                        speed: 4,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 900,
+                            area: 1000,
                         },
-                        value: 90,
+                        value: 50,
                     },
                     opacity: {
                         value: 0.5,
                     },
                     shape: {
-                        type: 'circle',
+                        type: 'line',
                     },
                     size: {
                         random: true,

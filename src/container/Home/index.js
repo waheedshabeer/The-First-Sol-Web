@@ -4,13 +4,15 @@ import {Layout} from '../../components/layout'
 import {AboutUs} from '../AboutUs'
 import {OurPortfolio} from '../Portfolio'
 import {ServiceHome} from '../../container/Services/components/services'
+import { THEME } from '../../Assets/theme'
+import { AboutUsHome } from '../AboutUs/components'
 export const Home = () => {
     return (
         <Layout>
-            <div className="flex min-h-screen ">
-                <div className="flex items-center py-4 h-96">
+            <div className="flex min-h-screen py-10 items-center ">
+                <div className="flex  py-4 h-96">
                     <div className="w-1/2">
-                        <div className="text-xl sm:text-2xl md:text-5xl lg:text-6xl text-aqua-normal">
+                        <div className={`text-xl sm:text-2xl md:text-5xl lg:text-6xl ${THEME.TEXT}`}>
                             Hi, We Welcome You At The First Sol
                         </div>
                     </div>
@@ -23,9 +25,9 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <AboutUs />
+            <AboutUsHome/>
             <ServiceHome/>
-            <OurPortfolio />
+            
         </Layout>
     )
 }

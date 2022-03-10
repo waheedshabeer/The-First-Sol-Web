@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
 import {ASSETS} from '../../Assets/Path'
+import {THEME} from '../../Assets/theme'
 export const Nav = () => {
     return (
         <div className="w-full flex flex-col py-4 space-y-2 page-padding">
@@ -18,42 +19,66 @@ export const Nav = () => {
                         alt=""
                     />
                 </div>
-                <div className="text-aqua-normal">
+                <div className={`${THEME.TEXT} Poppins-Semibold`}>
                     <div>
                         <i className="fas fa-bars md:hidden right-0"></i>
                     </div>
-                    <ul className="flex flex-col items-center md:flex md:flex-row space-x-4 ">
-                        <NavLink to="/">HOME</NavLink>
-                        <NavLink to="/about-us">ABOUT US</NavLink>
+                    <ul className="flex flex-col items-center md:flex md:flex-row space-x-4 cursor-pointer">
+                        <NavLink
+                            to="/"
+                            className={({isActive}) =>
+                                isActive
+                                    ? `text-aqua-normal`
+                                    : `text-white hover:text-aqua-normal`
+                            }>
+                            HOME
+                        </NavLink>
+                        <NavLink
+                            to="/about-us"
+                            className={({isActive}) =>
+                                isActive
+                                    ? `text-aqua-normal`
+                                    : `text-white hover:text-aqua-normal`
+                            }>
+                            ABOUT US
+                        </NavLink>
                         <div>
                             <div className="relative group">
-                                <NavLink to="/services">SERVICES</NavLink>
-                                <div className="flex flex-col items-center hidden group-hover:block absolute space-y-2 w-42 p-2 bg-white border overflow:hidden Poppins-Light">
+                                <NavLink
+                                    to="/services"
+                                    className={({isActive}) =>
+                                        isActive
+                                            ? `text-aqua-normal`
+                                            : `text-white hover:text-aqua-normal`
+                                    }>
+                                    SERVICES
+                                </NavLink>
+                                <div className="flex flex-col items-center hidden group-hover:block group-hover:duration-1000 absolute space-y-2 w-42 h-64 p-2 border overflow:hidden Poppins-Light">
                                     <div>
                                         <NavLink
                                             to="/Webdevelopment"
-                                            className="hover:text-gray-normal">
+                                            className={`hover:${THEME.HEADING}`}>
                                             WebbDevelopment
                                         </NavLink>
                                     </div>
                                     <div>
                                         <NavLink
                                             to="/Andriod"
-                                            className="hover:text-gray-normal">
+                                            className={`hover:${THEME.HEADING}`}>
                                             AndroidDevelopment
                                         </NavLink>
                                     </div>
                                     <div>
                                         <NavLink
                                             to="/ios"
-                                            className="hover:text-gray-normal">
+                                            className={`hover:${THEME.HEADING}`}>
                                             IOSDevelopment
                                         </NavLink>
                                     </div>
                                     <div>
                                         <NavLink
                                             to="/seo"
-                                            className="hover:text-gray-normal">
+                                            className={`hover:${THEME.HEADING}`}>
                                             SEO
                                         </NavLink>
                                     </div>
@@ -61,25 +86,41 @@ export const Nav = () => {
                                     <div>
                                         <NavLink
                                             to="/SocialMediaMaketing"
-                                            className="hover:text-gray-normal">
+                                            className={`hover:${THEME.HEADING}`}>
                                             SocialMediaMarketing
                                         </NavLink>
                                     </div>
                                     <div>
                                         <NavLink
                                             to="/Financial"
-                                            className="hover:text-gray-normal">
+                                            className={`hover:${THEME.HEADING}`}>
                                             Financials-ERP
                                         </NavLink>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <li>PORTFOLIO</li>
+                        <NavLink
+                            to="abc"
+                            className={({isActive}) =>
+                                isActive
+                                    ? `text-aqua-normal`
+                                    : `text-white hover:text-aqua-normal`
+                            }>
+                            PORTFOLIO
+                        </NavLink>
                         <div>
-                            <NavLink to="/careers">CAREERS</NavLink>
+                            <NavLink
+                                to="/careers"
+                                className={({isActive}) =>
+                                    isActive
+                                        ? `text-aqua-normal`
+                                        : `text-white hover:text-aqua-normal`
+                                }>
+                                CAREERS
+                            </NavLink>
                         </div>
-                        <li>CONTACT US</li>
+                        <li className="hover:text-aqua-normal">CONTACT US</li>
                     </ul>
                 </div>
             </div>
