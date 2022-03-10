@@ -4,19 +4,25 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import {Home} from './container/Home'
 import {AboutUs} from './container/AboutUs'
 import {Services} from './container/Services/index'
-import {Andriod, AndroidDevelopment} from './container/AndroidDevelopment'
+import {Andriod} from './container/AndroidDevelopment'
 import { Ios } from './container/IOS'
 import { SocialMediaMaketing } from './container/SocialMedia'
 import { Financial } from './container/Financial'
 import { Webdevelopment } from './container/WebDevelopment'
 import { Seo } from './container/SEO'
 import {Careers} from './container/Careers'
+import PARTICLES_FILE from './particles.json'
+
 function App() {
+    window.particlesJS.load('particles-js', PARTICLES_FILE , function() {
+        console.log('callback - particles.js config loaded');
+      });
     return (
         <div>
             <div className="bg-fixed">
                 <ParticlesBackground />
             </div>
+
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />

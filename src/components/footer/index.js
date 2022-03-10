@@ -1,9 +1,10 @@
 import React from 'react'
 import {ASSETS} from '../../Assets/Path'
+import { THEME } from '../../Assets/theme'
 
 export const Footer = () => {
     return (
-        <div className="text-aqua-normal backdrop-blur-sm bg-footer-background page-padding py-5">
+        <div className={`${THEME.TEXT} backdrop-blur-sm ${THEME.FOOTER} page-padding py-5 space-y-8`}>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8">
                 <div className="flex flex-col col-span-2 space-y-4">
                     <div className="h-10 w-10 bg-white">
@@ -18,7 +19,7 @@ export const Footer = () => {
                 </div>
 
                 <div className="text-sm space-y-4 Poppins-Light">
-                    <div className='Poppins-Medium'>USEFULL LINKS</div>
+                    <div className="Poppins-Medium">USEFULL LINKS</div>
                     <div className="space-y-4 text-sm">
                         <div>Home</div>
                         <div>About Us</div>
@@ -30,8 +31,8 @@ export const Footer = () => {
                 </div>
 
                 <div className="text-sm space-y-4 Poppins-Light">
-                    <div className='Poppins-Medium'>CONTACT US</div>
-                    <div className='text-sm'>
+                    <div className="Poppins-Medium">CONTACT US</div>
+                    <div className="text-sm">
                         <div>903 BLOCK</div>
                         <div>Johar Town</div>
                         <div>Lahore</div>
@@ -47,8 +48,11 @@ export const Footer = () => {
             </div>
             <div className="flex justify-center Poppins-Light">
                 <span className="hidden sm:text-xs">CopyRight</span> ©Copyright
-                <span className="font-bold">HashloopsTecnology</span>. All
-                Rights Reserved
+                <span className="Poppins-ExtraBold text-white">
+                    
+                    thefirstsol
+                </span>
+                . All Rights Reserved
             </div>
         </div>
     )

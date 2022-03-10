@@ -1,18 +1,18 @@
 import React from 'react'
+import { THEME } from '../../Assets/theme'
 import {Layout} from '../../components/layout'
 import {SERVICES} from './Constant'
-
 export const Services = () => {
     return (
         <Layout>
-            <div className='py-14'>
+            <div className="py-14">
                 <div className="space-y-8">
                     <div className="flex justify-center">
-                        <div className="text-xl sm:text-2xl md:text-5xl lg:text-5xl text-aqua-normal Poppins-Regular">
+                    <div className={`text-xl sm:text-2xl md:text-5xl lg:text-5xl ${THEME.TEXT} Poppins-Regular`}>
                             Services
                         </div>
                     </div>
-                    <div className="text-center text-gray-normal text-xs sm:text-base md:text-lg Poppins-Light">
+                    <div className={`text-center ${THEME.TEXT} text-xs sm:text-base md:text-lg Poppins-Light`}>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Voluptatum, hic quidem excepturi perspiciatis enim qui
                         pariatur fugit quod. Velit quisquam minus similique ut
@@ -24,13 +24,13 @@ export const Services = () => {
                     {SERVICES.map((item, index) => (
                         <div
                             key={index}
-                            className="h-64 w-64 group drop-shadow-2xl">
-                            <div className="flex items-center justify-center duration-1000 w-full h-full group-hover:-mt-20  bg-aqua-normal text-white z-aut drop-shadow-sm">
+                            className="h-64 w-64 group drop-shadow-2xl cursor-pointer">
+                            <div className={`flex items-center justify-center duration-300 w-full h-full group-hover:-mt-20 ${item.COLOR} text-white z-aut drop-shadow-sm`}>
                                 <i
                                     className={`${item.ICON} text-7xl `}
                                     aria-hidden="true"></i>
                             </div>
-                            <div className="w-full -mt-64 group-hover:mt-0 duration-1000 bg-white ">
+                            <div className="w-full -mt-64 group-hover:mt-0 duration-500 bg-white ">
                                 <div className="flex justify-center text-gray-normal Poppins-Semibold font-medium p-4">
                                     <h1>{item.HEADING}</h1>
                                 </div>
