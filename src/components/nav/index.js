@@ -53,7 +53,7 @@ export const Nav = () => {
                                     }>
                                     SERVICES
                                 </NavLink>
-                                <div className="flex flex-col items-center hidden group-hover:block group-hover:duration-1000 absolute space-y-2 w-42 h-64 p-2 border overflow:hidden Poppins-Light">
+                                <div className="hidden flex-col group-hover:flex group-hover:duration-1000 absolute space-y-2 w-42 p-2 border text-normal Poppins-Light">
                                     <div>
                                         <NavLink
                                             to="/Webdevelopment"
@@ -120,7 +120,17 @@ export const Nav = () => {
                                 CAREERS
                             </NavLink>
                         </div>
-                        <li className="hover:text-aqua-normal">CONTACT US</li>
+                        <div>
+                            <NavLink
+                                to="/Contact-Us"
+                                className={({isActive}) =>
+                                    isActive
+                                        ? `text-aqua-normal`
+                                        : `text-white hover:text-aqua-normal`
+                                }>
+                                CONTACT US
+                            </NavLink>
+                        </div>
                     </ul>
                 </div>
             </div>
