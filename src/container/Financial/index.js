@@ -11,7 +11,11 @@ export const Financial = () => {
                 <LefSideImage
                     IMAGE={FINANCIAL.IMAGE}
                     HEADING={FINANCIAL.HEADING}
-                    DISCRIPTION={FINANCIAL.DISCRIPTION}
+                    DISCRIPTION={FINANCIAL.DISCRIPTION.HEADING}
+                    PARAGRAPH1={FINANCIAL.DISCRIPTION.PARAGRAPH1}
+                    PARAGRAPH2={FINANCIAL.DISCRIPTION.PARAGRAPH2}
+                    PARAGRAPH3={FINANCIAL.DISCRIPTION.PARAGRAPH3}
+                    PARAGRAPH4={FINANCIAL.DISCRIPTION.PARAGRAPH4}
                 />
             </div>
         </Layout>

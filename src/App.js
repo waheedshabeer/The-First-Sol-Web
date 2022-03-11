@@ -12,6 +12,7 @@ import { Webdevelopment } from './container/WebDevelopment'
 import { Seo } from './container/SEO'
 import {Careers} from './container/Careers'
 import PARTICLES_FILE from './particles.json'
+import { ContactUs } from './container/ContactUs'
 
 function App() {
     window.particlesJS.load('particles-js', PARTICLES_FILE , function() {
@@ -35,6 +36,7 @@ function App() {
                     <Route path="/Webdevelopment" element={<Webdevelopment/> } />
                     <Route path="/seo" element={<Seo/> } />
                     <Route path="/careers" element={<Careers/> } />
+                    <Route path="/Contact-Us" element={<ContactUs/> } />
                 </Routes>
             </BrowserRouter>
         </div>
