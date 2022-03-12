@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
         <div className={`${THEME.TEXT} backdrop-blur-sm ${THEME.FOOTER} page-padding py-5 space-y-8`}>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8">
-                <div className="flex flex-col col-span-2 space-y-4">
+                <div className="flex flex-col col-span-2 pr-4 space-y-4">
                     <div className="h-10 w-10 bg-white">
                         <img src={ASSETS.LOGO} alt="" />
                     </div>

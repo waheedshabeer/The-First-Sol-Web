@@ -1,22 +1,20 @@
 import React from 'react'
 import { THEME } from '../../Assets/theme'
-import {Layout} from '../../components/layout'
-import {SERVICES} from './Constant'
+import { Layout } from '../../components/layout'
+import { SERVICES } from './Constant'
 export const Services = () => {
     return (
         <Layout>
             <div className="py-14">
                 <div className="space-y-8">
                     <div className="flex justify-center">
-                    <div className={`text-xl sm:text-2xl md:text-5xl lg:text-5xl ${THEME.TEXT} Poppins-Regular`}>
+                        <div className={`text-xl sm:text-2xl md:text-5xl lg:text-5xl ${THEME.TEXT} Poppins-Regular`}>
                             Services
                         </div>
                     </div>
                     <div className={`text-center ${THEME.TEXT} text-xs sm:text-base md:text-lg Poppins-Light`}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatum, hic quidem excepturi perspiciatis enim qui
-                        pariatur fugit quod. Velit quisquam minus similique ut
-                        iste debitis voluptate temporibus neque quis veniam!
+                        At TheFirstSol Technologies we focus on delivering end-to-end solutions according to customer requirements. This includes understanding the
+                        requirements, planning, developing, deploying, and maintaining/upgrading the solutions we build.
                     </div>
                 </div>
 

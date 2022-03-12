@@ -1,9 +1,9 @@
 import React from 'react'
-import {ASSETS} from '../../Assets/Path'
-import {Layout} from '../../components/layout'
-import {AboutUs} from '../AboutUs'
-import {OurPortfolio} from '../Portfolio'
-import {ServiceHome} from '../../container/Services/components/services'
+import { ASSETS } from '../../Assets/Path'
+import { Layout } from '../../components/layout'
+// import { AboutUs } from '../AboutUs'
+
+import { ServiceHome } from '../../container/Services/components/services'
 import { THEME } from '../../Assets/theme'
 import { AboutUsHome } from '../AboutUs/components'
 export const Home = () => {
@@ -25,9 +25,8 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <AboutUsHome/>
-            <ServiceHome/>
-            
+            <AboutUsHome />
+            <ServiceHome />
         </Layout>
     )
 }
