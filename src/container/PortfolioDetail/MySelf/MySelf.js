@@ -1,4 +1,5 @@
 import React from "react";
+import {ASSETS} from "../../../Assets/Path"
 // import bgimg from "../../assets/images/Myself/calvino-image.png";
 // import bgimg1 from "../../assets/images/Myself/profile-image.webp";
 // import bgimg2 from "../../assets/images/Myself/email-image.webp";
@@ -14,10 +15,10 @@ export const MySelf = ({ userData }) => {
 
         <Fade right>
           <div className="mt-0 ml-0 md:ml-16 text-left  w-full">
-            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl text-center sm:text-center md:text-left text-white ">
+            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl text-center sm:text-center md:text-left text-white ">
               My name is {userData?.fullName ? userData?.fullName : 'Calvin'}.<br></br>{userData?.title ? userData.title : 'Digital Product Designer'}
             </h1>
-            <h1 className="text-xl md:text-3xl lg:text-4xl font-semibold mt-5 md:mt-10  lg:mt-16 text-center sm:text-center md:text-left text-gray-400">
+            <h1 className="text-xl text-white md:text-2xl lg:text-3xl Poppins-Regular mt-5 md:mt-10  lg:mt-16 text-center sm:text-center md:text-left text-gray-400">
               {userData?.type === "Website" ? 'Web Developer at The First Sol' : userData?.type === "Mobile" ? 'Mobile Developer at The First Sol' : 'Web & Mobile Developer at The First Sol'}</h1>
           </div>
         </Fade>
@@ -37,7 +38,7 @@ export const MySelf = ({ userData }) => {
               <p className="text-xs sm:text-lg">Drop your Message</p>
               <p className="text-sm sm:text-xl md:text-2xl mt-2 md:mt-4">{userData?.email ? userData.email : 'calvino90@gmail.com'}</p>
             </div>
-            <img src={require('../../../Assets/img/Myself/email-image.webp').default} className="hidden cursor-pointer sm:block sm:ml-5 sm:w-12 sm:h-12 md:w-12 md:h-12 lgd:w-12 lg:h-12 animate-bounce" alt="" />
+            <img src={ASSETS.MYSELF.EMAIL} className="hidden cursor-pointer sm:block sm:ml-5 sm:w-12 sm:h-12 md:w-12 md:h-12 lgd:w-12 lg:h-12 animate-bounce" alt="" />
           </div>
         </div>
       </Bounce>

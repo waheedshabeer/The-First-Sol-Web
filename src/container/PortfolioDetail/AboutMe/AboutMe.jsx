@@ -90,7 +90,7 @@ export const AboutMe = ({userData}) => {
     }, [])
 
     return (
-        <div className="text-left py-24 overflow-hidden" id="About">
+        <div className="text-left py-24 overflow-hidden text-white" id="About">
             <h1 data-aos="fade-right" className="headings">
                 About Me
             </h1>

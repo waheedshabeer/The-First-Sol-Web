@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
+import { Footer } from '../PortfolioDetail/Footer/Footer'
 import {developersRef} from '../../firebase/firebase'
 import {AboutUsHome} from '../AboutUs/components'
 import {MyExperties} from './MyExperties/MyExperties'
@@ -54,7 +55,7 @@ export const PortfolioDetail = () => {
                 <AboutUsHome userData={userData} />
                 {/* <ClientTestimonial /> */}
             </div>
-            {/* <Footer /> */}
+            <Footer/>
         </div>
     )
 }
