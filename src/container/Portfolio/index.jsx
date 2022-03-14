@@ -150,10 +150,10 @@ export const OurPortfolio = () => {
                     {...settings}
                     className="slider-features w-full text-white">
                     {TEAM_DATA.map((item, index) => (
-                        <div className="text-center space-y-2 drop-shadow-2xl" onClick={navigate(`po`)}>
+                        <div className="text-center space-y-2 drop-shadow-2xl" >
                             <img
                                 src={item.IMAGE}
-                                className="h-60 w-60 mx-auto object-start object-cover"
+                                className="h-60 w-60 mx-auto object-start object-cover " onClick={()=>navigate(`/portfolio-detail/muhammadbilal`)}
                                 alt=""
                             />
                             <div className="flex flex-col space-y-1">
