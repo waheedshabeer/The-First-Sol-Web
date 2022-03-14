@@ -13,6 +13,7 @@ import { Seo } from './container/SEO'
 import { Careers } from './container/Careers'
 import { ContactUs } from './container/ContactUs'
 import { OurPortfolio } from './container/Portfolio'
+import { PortfolioDetail } from './container/PortfolioDetail'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
                     <Route path="/careers" element={<Careers />} />
                     <Route path="/portfolio" element={<OurPortfolio />} />
                     <Route path="/Contact-Us" element={<ContactUs />} />
+                    <Route path="/portfolio-detail/:name" element={<PortfolioDetail />} />
                 </Routes>
             </BrowserRouter>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {ASSETS} from '../../Assets/Path'
+import { ASSETS } from '../../Assets/Path'
 import { THEME } from '../../Assets/theme'
 
 export const Footer = () => {
@@ -47,9 +47,10 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="flex justify-center Poppins-Light">
-                <span className="hidden sm:text-xs">CopyRight</span> ©Copyright
-                <span className="Poppins-ExtraBold text-white">
-                    
+                <span className="hidden sm:text-xs">CopyRight</span> 
+                ©Copyright
+
+                <span className="Poppins-Bold text-white px-2">
                     thefirstsol
                 </span>
                 . All Rights Reserved
