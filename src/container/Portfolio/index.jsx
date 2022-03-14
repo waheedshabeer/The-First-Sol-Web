@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
-// import 'slick-carousel/slick/slick.css'
+import { useNavigate } from "react-router-dom"
+// import 'slick-carousel/slick/slick.css'-
 // import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -13,6 +14,7 @@ import {LazyImage} from '../../components/LazyImage'
 import {fallbackImage} from '../../components/fallbackImage'
 
 export const OurPortfolio = () => {
+    let navigate = useNavigate();
     const settings = {
         // className: 'center',
         centerMode: true,
@@ -59,42 +61,49 @@ export const OurPortfolio = () => {
             NAME: 'Waheed Shabeer',
             CATEGORY: 'Mobile Developer',
             SUBCATEGORY: 'Senior React Native Developer (CEO)',
+            URL:''
         },
         {
             IMAGE: ASSETS.TEAM.ASIF_HAYAT,
             NAME: 'Asif Hayat',
             CATEGORY: 'Mobile Developer',
             SUBCATEGORY: 'Senior React Native Developer',
+            URL:''
         },
         {
             IMAGE: ASSETS.TEAM.TAJASSAM,
             NAME: 'Tajasam',
             CATEGORY: 'Mobile Developer',
             SUBCATEGORY: 'Senior React Native Developer',
+            URL:''
         },
         {
             IMAGE: ASSETS.TEAM.SHOAIB,
             NAME: 'Shoaib',
             CATEGORY: 'Mobile Developer',
             SUBCATEGORY: 'Senior React Native Developer',
+            URL:''
         },
         {
             IMAGE: ASSETS.TEAM.NOUMAN,
             NAME: 'Muhammad Nouman',
             CATEGORY: 'Mobile Developer',
             SUBCATEGORY: 'React Native Developer',
+            URL:''
         },
         {
             IMAGE: ASSETS.TEAM.MUHAMMADBILAL,
             NAME: 'Muhammad Bilal',
             CATEGORY: 'Web Developer',
             SUBCATEGORY: 'Senior React Developer',
+            URL:''
         },
         {
             IMAGE: ASSETS.TEAM.NASIR,
             NAME: 'Nisar Ahmed',
             CATEGORY: 'Web Developer',
             SUBCATEGORY: 'React Developer',
+            URL:''
         },
     ]
 
@@ -141,7 +150,7 @@ export const OurPortfolio = () => {
                     {...settings}
                     className="slider-features w-full text-white">
                     {TEAM_DATA.map((item, index) => (
-                        <div className="text-center space-y-2 drop-shadow-2xl">
+                        <div className="text-center space-y-2 drop-shadow-2xl" onClick={navigate(`po`)}>
                             <img
                                 src={item.IMAGE}
                                 className="h-60 w-60 mx-auto object-start object-cover"
