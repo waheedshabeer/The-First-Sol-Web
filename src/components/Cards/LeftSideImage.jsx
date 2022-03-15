@@ -1,7 +1,7 @@
 import React from 'react'
 import {THEME} from '../../Assets/theme'
 import {fallbackImage} from '../fallbackImage'
-import {LazyImage} from '../LazyImage' 
+import {LazyImage} from '../LazyImage'
 
 export const LefSideImage = (props) => {
     return (
@@ -11,7 +11,7 @@ export const LefSideImage = (props) => {
                     <LazyImage
                         src={props.IMAGE ? props.IMAGE : fallbackImage}
                         alt={''}
-                        className="float-left bg-footer-background mr-3 mb-0.5 sm:mr-5 sm:mb-2 w-20 h-20 sm:w-20 sm:h-20 md:w-80 lg:w-96 md:h-96
+                        className="float-left bg-footer-background mr-3 mb-0.5 sm:mr-5 sm:mb-2 w-20 h-20 sm:w-20 sm:h-20 md:w-80 md:h-96 lg:w-96 
                         duration-1000"
                     />
                     <h1

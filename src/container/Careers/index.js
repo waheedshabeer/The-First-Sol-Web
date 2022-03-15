@@ -11,7 +11,12 @@ export const Careers = () => {
                 <LefSideImage
                     IMAGE={CAREERS.IMAGE}
                     HEADING={CAREERS.HEADING}
-                    DISCRIPTION={CAREERS.DISCRIPTION}
+                    DISCRIPTION={CAREERS.DISCRIPTION.HEADING}
+                    PARAGRAPH1={CAREERS.DISCRIPTION.PARAGRAPH1}
+                    PARAGRAPH2={CAREERS.DISCRIPTION.PARAGRAPH2}
+                    PARAGRAPH3={CAREERS.DISCRIPTION.PARAGRAPH3}
+                    PARAGRAPH4={CAREERS.DISCRIPTION.PARAGRAPH4}
+                    
                 />
             </div>
         </Layout>

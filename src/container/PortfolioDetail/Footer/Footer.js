@@ -55,14 +55,12 @@ export const Footer = () => {
                             icon={faHeart}
                             style={{color: '#4DBCE9'}}
                         />{' '} */}
-                        
                     </div>
-                    <div className="text-center mt-5 md:mt-0 space-x-4 sm:space-x-6">
-                        <a href="">Home</a>
-                        <a href="">Work</a>
-                        <a href="">Service</a>
-                        <a href="">blog</a>
-                        <a href="">Contact</a>
+                    <div className="text-center mt-5 md:mt-0 space-x-4 sm:space-x-6 ">
+                    <a href="#Home">Home</a>
+                        <a href="#Work">Work</a>
+                        <a href="#Service">Service</a>
+                        <a href="#About">About</a>
                     </div>
                 </div>
                 {/* <div className=" flex justify-end ">

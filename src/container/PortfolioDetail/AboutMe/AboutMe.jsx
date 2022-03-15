@@ -4,9 +4,9 @@ import 'aos/dist/aos.css'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
 import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel/dist/assets/owl.theme.default.css'
+import {PortfolioHeading} from '../../../components/Cards/PortfolioHeading'
 export const AboutMe = ({userData}) => {
     const [softwareList, setsoftwareList] = useState([
         {
@@ -92,7 +92,7 @@ export const AboutMe = ({userData}) => {
     return (
         <div className="text-left py-24 overflow-hidden text-white" id="About">
             <h1 data-aos="fade-right" className="headings">
-                About Me
+                <PortfolioHeading HEADING={"About Me"} />
             </h1>
             <div className="flex flex-col md:flex-row my-10 md:my-16">
                 <div data-aos="fade-up" className="w-full md:w-1/2">

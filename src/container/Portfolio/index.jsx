@@ -105,6 +105,13 @@ export const OurPortfolio = () => {
             SUBCATEGORY: 'React Developer',
             URL:''
         },
+        {
+            IMAGE: ASSETS.TEAM.YASIN,
+            NAME: 'Malik Yasin',
+            CATEGORY: 'Business Manager',
+            SUBCATEGORY: '',
+            URL:''
+        },
     ]
 
     const PORFOLIOS = [
@@ -136,7 +143,7 @@ export const OurPortfolio = () => {
                                 src={IMAGE ? IMAGE : fallbackImage}
                                 alt={''}
                                 className="object-cover w-full h-24 sm:h-44 md:h-60 lg:h-80 max-h-80 object-center"
-                            />
+                            /> 
                         </div>
                         <div className="text-sm md:text-base Poppins-Medium lg:text-xl text-white hover:text-aqua">
                             {NAME}
