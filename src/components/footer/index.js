@@ -1,7 +1,7 @@
 import React from 'react'
 import { ASSETS } from '../../Assets/Path'
 import { THEME } from '../../Assets/theme'
-
+import {Link} from "react-router-dom"
 export const Footer = () => {
     return (
         <div className={`${THEME.TEXT} backdrop-blur-sm ${THEME.FOOTER} page-padding py-5 space-y-8`}>
@@ -21,7 +21,7 @@ export const Footer = () => {
                 <div className="text-sm space-y-4 Poppins-Light">
                     <div className="Poppins-Medium">USEFULL LINKS</div>
                     <div className="space-y-4 text-sm">
-                        <div>Home</div>
+                        <Link to="/home">Home</Link>
                         <div>About Us</div>
                         <div>Services</div>
                         <div>Portfolio</div>
