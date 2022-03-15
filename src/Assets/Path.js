@@ -18,8 +18,10 @@ import NASIR from './img/team/nisar.jpg'
 import WAHEED from './img/team/PDP.png'
 import SHOAIB from './img/team/Shoaib.jpeg'
 import CAREERS from './img/careers.png'
+
 import EMAIL from '../Assets/img/Myself/email-image.webp'
 import PROFILE from '../Assets/img/Myself/profile-image.webp'
+
 export const ASSETS = {
   LOGO,
   ABOUT_US,

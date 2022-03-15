@@ -4,7 +4,7 @@ import 'aos/dist/aos.css'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import OwlCarousel from 'react-owl-carousel'
+
 import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel/dist/assets/owl.theme.default.css'
 export const AboutMe = ({userData}) => {
@@ -96,14 +96,12 @@ export const AboutMe = ({userData}) => {
             </h1>
             <div className="flex flex-col md:flex-row my-10 md:my-16">
                 <div data-aos="fade-up" className="w-full md:w-1/2">
-                    <p className="font-semibold text-base md:text-xl text-justify w-11/12">
-                        {userData.description
-                            ? userData.description
+                    <p className="Poppins-Regular text-base md:text-xl text-justify w-11/12">
+                        {userData?.description
+                            ? userData?.description
                             : 'In the mean time shall soon find out the cause of this What was the epicurus towards their children; each of these can have a chain of not to have been taken in the broad plain in what is the reason why'}
                     </p>
-                    <div
-                        className="mt-10 font-medium text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl w-11/12 leading-8  sm:leading-10"
-                        style={{color: '#4DBCE9'}}>
+                    <div className="mt-10 Poppins-SemiBold text-aqua-normal  text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl w-11/12 leading-8  sm:leading-10">
                         "What was the epicurus towards their children; each of
                         these can have a chain.
                     </div>
@@ -113,17 +111,15 @@ export const AboutMe = ({userData}) => {
                     className="w-full mt-16 md:mt-0 md:w-1/2 flex flex-col">
                     <div className="flex flex-col">
                         <div className="flex justify-between -mt-10">
-                            <div className="font-semibold text-xl">
+                            <div className="Poppins-Regular text-xl">
                                 User Interface Design
                             </div>
-                            <div
-                                lassName="mt-10 font-bold text-4xl "
-                                style={{color: '#4DBCE9'}}>
+                            <div className="Poppins-Regular  text-xl  text-aqua-normal">
                                 60%
                             </div>
                         </div>
                         <div className="relative mt-5 w-full">
-                            <div className="overflow-hidden h-1.5 text-xs flex rounded bg-purple-200">
+                            <div className="overflow-hidden h-1.5 text-xs flex rounded bg-white">
                                 <div
                                     style={{
                                         width: '60%',
@@ -133,17 +129,15 @@ export const AboutMe = ({userData}) => {
                             </div>
                         </div>
                         <div className="flex justify-between mt-6">
-                            <div className="font-semibold text-xl">
+                            <div className="Poppins-Regular text-xl">
                                 User Experience
                             </div>
-                            <div
-                                lassName="mt-10 font-bold text-4xl "
-                                style={{color: '#4DBCE9'}}>
+                            <div className="Poppins-Regular  text-xl  text-aqua-normal">
                                 89%
                             </div>
                         </div>
                         <div className="relative mt-5 w-full">
-                            <div className="overflow-hidden h-1.5 text-xs flex rounded bg-purple-200">
+                            <div className="overflow-hidden h-1.5 text-xs flex rounded bg-white">
                                 <div
                                     style={{
                                         width: '89%',
@@ -153,17 +147,15 @@ export const AboutMe = ({userData}) => {
                             </div>
                         </div>
                         <div className="flex justify-between mt-6">
-                            <div className="font-semibold text-xl">
+                            <div className="Poppins-Regular text-xl">
                                 Illustration
                             </div>
-                            <div
-                                lassName="mt-10 font-bold text-4xl "
-                                style={{color: '#4DBCE9'}}>
+                            <div className="Poppins-Regular  text-xl  text-aqua-normal">
                                 95%
                             </div>
                         </div>
                         <div className="relative mt-5 w-full">
-                            <div className="overflow-hidden h-1.5 text-xs flex rounded bg-purple-200">
+                            <div className="overflow-hidden h-1.5 text-xs flex rounded bg-white">
                                 <div
                                     style={{
                                         width: '95%',
@@ -176,23 +168,21 @@ export const AboutMe = ({userData}) => {
                 </div>
             </div>
             <div className="mt-5" data-aos="fade-up">
-                <Slider {...settings} className="w-full items-center py-10">
+                <Slider
+                    {...settings}
+                    className="w-full items-center py-10 text-white">
                     {softwareList.map((item, index) => {
                         return (
                             <div
                                 key={index}
                                 className=" h-40 flex items-center justify-center py-2">
-                                <div
-                                    style={{
-                                        boxShadow:
-                                            '0 0 5px 3px rgba(0,0,0,0.2)',
-                                    }}
-                                    className="w-8/12 mx-auto flex flex-col items-center justify-center bg-white h-28 rounded-lg">
+                                <div className="w-8/12 mx-auto flex flex-col items-center justify-center  h-28 rounded-lg">
                                     <img
                                         src={item.img}
-                                        className="mx-auto w-14 h-14"
+                                        className="mx-auto w-14 h-14 rounded-xl"
+                                        alt=""
                                     />
-                                    <div className="mx-auto text-center font-bold text-xl mt-2">
+                                    <div className="mx-auto text-center font-bold text-xl mt-2 text-white">
                                         {item.name}
                                     </div>
                                 </div>
