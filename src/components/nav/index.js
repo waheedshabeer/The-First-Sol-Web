@@ -127,7 +127,7 @@ export const Nav = () => {
                         </div>
                         <div>
                             <NavLink
-                                to="/Contact-Us"
+                                to="/contact-us"
                                 className={({ isActive }) =>
                                     isActive
                                         ? `text-aqua-normal`

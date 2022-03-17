@@ -22,7 +22,7 @@ export const ServiceHome = () => {
                 </div>
             </div>
             {/* cards */}
-            <div className="py-44 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-48 md:gap-2  place-items-center">
+            <div className="py-48 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-48 md:gap-2  place-items-center">
                 {SERVICES.map((item, index) => (
                     <div
                         key={index}

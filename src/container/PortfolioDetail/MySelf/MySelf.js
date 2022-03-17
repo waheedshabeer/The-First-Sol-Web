@@ -1,17 +1,24 @@
 import React from "react";
-import {ASSETS} from "../../../Assets/Path"
+import { ASSETS } from "../../../Assets/Path"
 // import bgimg from "../../assets/images/Myself/calvino-image.png";
 // import bgimg1 from "../../assets/images/Myself/profile-image.webp";
 // import bgimg2 from "../../assets/images/Myself/email-image.webp";
 
 import { Fade, Bounce, Roll } from 'react-reveal'
 export const MySelf = ({ userData }) => {
+  console.log(userData)
   return (
-    <div className="h-screen bg-gradient-to-t from-blue-400  to-white" id="Home">
+    <div className="h-screen  bg-gradient-to-t from-blue-400  to-white" id="Home">
       <div className="flex flex-col justify-center md:flex-row items-center h-full px-0 md:px-10 lg:px-24">
-        <Roll>
-          <img src={userData?.avatar ? userData.avatar : require('../../../Assets/img/Myself/profile-image.webp').default} alt="" className="w-28 rounded-full h-28 sm:w-32 sm:h-32 md:w-64 md:h-64 lg:w-72 lg:h-72" />
-        </Roll>
+
+        <Fade right>
+          <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover overflow-hidden">
+            <img src={userData?.avatar ? userData?.avatar :
+              require('../../../Assets/img/Myself/profile-image.webp').default}
+              alt=""
+              className="w-full h-full" />
+          </div>
+        </Fade>
 
         <Fade right>
           <div className="mt-0 ml-0 md:ml-16 text-left  w-full">

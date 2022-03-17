@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className={`${THEME.TEXT} backdrop-blur-sm ${THEME.FOOTER} page-padding py-5 space-y-8`}>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8">
                 <div className="flex flex-col col-span-2 pr-4 space-y-4">
-                    <div className="h-10 w-10 bg-white">
+                    <div className="h-10 w-10 bg-white rounded-full overflow-hidden">
                         <img src={ASSETS.LOGO} alt="" />
                     </div>
                     <div className="text-sm Poppins-Light">
@@ -17,16 +17,15 @@ export const Footer = () => {
                         you name it,we've got the right software solution for it
                     </div>
                 </div>
-
                 <div className="text-sm space-y-4 Poppins-Light">
                     <div className="Poppins-Medium">USEFULL LINKS</div>
-                    <div className="space-y-4 text-sm">
-                        <Link to="/home">Home</Link>
-                        <div>About Us</div>
-                        <div>Services</div>
-                        <div>Portfolio</div>
-                        <div>Careers</div>
-                        <div>Contact Us</div>
+                    <div className="text-sm flex flex-col space-y-1">
+                        <Link to="/">Home</Link>
+                        <Link to="/about-us">About Us</Link>
+                        <Link to="/services">Services</Link>
+                        <Link to="/andriod">Portfolio</Link>
+                        <Link to="/careers">Careers</Link>
+                        <Link to="/contact-us">Contact Us</Link>
                     </div>
                 </div>
 
@@ -46,14 +45,14 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center Poppins-Light">
+            <div className="flex items-center justify-center Poppins-Light">
                 <span className="hidden sm:text-xs">CopyRight</span> 
-                ©Copyright
+                ©
 
                 <span className="Poppins-Bold text-white px-2">
-                    thefirstsol
+                    thefirstsol.
                 </span>
-                . All Rights Reserved
+                All Rights Reserved
             </div>
         </div>
     )

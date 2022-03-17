@@ -2,10 +2,10 @@ import React from 'react'
 import Particles from 'react-tsparticles'
 export const ParticlesBackground = () => {
     const particlesInit = main => {
-        console.log(main)
+        // console.log(main)
     }
     const particlesLoaded = container => {
-        console.log(container)
+        // console.log(container)
     }
     return (
         <Particles

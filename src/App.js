@@ -1,6 +1,6 @@
 import React from 'react'
 import { ParticlesBackground } from './components/particlesBackground/index'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './container/Home'
 import { AboutUs } from './container/AboutUs'
 import { Services } from './container/Services/index'
@@ -24,7 +24,7 @@ function App() {
                 <ParticlesBackground />
             </div>
 
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about-us" element={<AboutUs />} />
@@ -37,10 +37,10 @@ function App() {
                     <Route path="/seo" element={<Seo />} />
                     <Route path="/careers" element={<Careers />} />
                     <Route path="/portfolio" element={<OurPortfolio />} />
-                    <Route path="/Contact-Us" element={<ContactUs />} />
+                    <Route path="/contact-us" element={<ContactUs />} />
                     <Route path="/portfolio-detail/:name" element={<PortfolioDetail />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     )
 }
