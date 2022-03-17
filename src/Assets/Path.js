@@ -1,11 +1,12 @@
 import LOGO from './img/logo.jfif'
+import LAPTOP from './img/laptop2.png'
 import ABOUT_US from './img/about-us.jpg'
 import HASH_LOGO  from './img/hash-logo.png'
 import ANDROID from './img/Android.jpg'
 import IOS from './img/IOS.jpg'
 import SEO from './img/Seo.jpg'
 import WEB from './img/WebDevelopment.jpg'
-import FOOD_GHR from './img/foodghar.png'
+import FOOD_GHR from './img/foodghar.png' 
 import ECOMMERNCE from './img/Ecommernce.jpg'
 import THEFIRSTSOL from './img/The First Sol App.jpg'
 import EZY_GRAB from './img/EzyGrab.png'
@@ -29,6 +30,7 @@ import SHOP_APP from "../Assets/img/MyWork/shop-app.PNG"
 import E_SKOOLY_VERCEL from "../Assets/img/MyWork/skooly.PNG"
 export const ASSETS = {
   LOGO,
+  LAPTOP,
   ABOUT_US,
   HASH_LOGO,
   CAREERS,

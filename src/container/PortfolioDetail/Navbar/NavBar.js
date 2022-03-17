@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-
-export const NavBar = ({ toggle, toggleHandler, navCol, fullName }) => {
+import React, {useState} from 'react'
+import {useNavigate} from 'react-router-dom'
+import {MyExperties} from '../MyExperties/MyExperties'
+export const NavBar = ({toggle, toggleHandler, navCol, fullName}) => {
     const [menu, setmenu] = useState()
     const GetFirstName = () => {
         const Name = fullName.split(' ')
@@ -54,16 +54,12 @@ export const NavBar = ({ toggle, toggleHandler, navCol, fullName }) => {
                 <a href="#Work">Work</a>
                 <a href="#Service">Service</a>
                 <a href="#About">About</a>
-                <a
-                    href="#Contact"
-                    onClick={() => navigate(`/Contact-Us`)}>
-                    Contact
-                </a>
+                <div className='cursor-pointer' onClick={() => navigate(`/contact-Us`)}>Contact</div>
             </div>
             <div>
                 <button
                     className="hidden md:block whitespace-nowrap rounded-full border-2 border-white font-semibold px-10 py-2 hover:bg-white hover:text-aqua-normal"
-                    onClick={() => navigate(`/Contact-Us`)}>
+                    onClick={() => navigate(`/contact-Us`)}>
                     Let,s Talk
                 </button>
             </div>

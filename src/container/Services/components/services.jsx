@@ -39,7 +39,7 @@ export const ServiceHome = () => {
                             </div>
                             <hr />
                             <div className="text-center text-gray-normal text-xs lg:text-sm p-3 lg:p-4 Poppins-Light">
-                                ${item.DISCRIPTION}
+                                {item.DISCRIPTION}
                             </div>
                         </div>
                     </div>
