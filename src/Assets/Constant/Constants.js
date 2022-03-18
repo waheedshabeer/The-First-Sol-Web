@@ -37,7 +37,7 @@ export const IOS = {
 }
 
 export const SOCIAL_MEDIA_MARKETING = {
-    IMAGE: ASSETS.ABOUT_US,
+    IMAGE: ASSETS.SOCIAL_MEDIA_MARKETING,
     HEADING: 'About Social Media Marketing',
     DISCRIPTION: {
         HEADING: "We provide the best software solutions which helps our clients to grow there business.",
@@ -61,7 +61,7 @@ export const ANDROIDDEVELOPMENT = {
 }
 
 export const FINANCIAL = {
-    IMAGE: ASSETS.ABOUT_US,
+    IMAGE: ASSETS.FINANCIAL,
     HEADING: 'About Financial-ERP',
     DISCRIPTION: {
         HEADING: "We provide the best software solutions which helps our clients to grow there business.",
@@ -107,7 +107,7 @@ export const HEADING = {
         ABOUT_US: "About US"
     },
     WEBDEVELOPMENT: {
-        WEBDEVELOPMENT: "WebDevelopment"
+        WEBDEVELOPMENT: "Web Development"
     },
     IOS: {
         IOS: "Ios Development"

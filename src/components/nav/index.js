@@ -62,28 +62,28 @@ export const Nav = () => {
                                     <div>
                                         <NavLink
                                             to="/Webdevelopment"
-                                            className={`hover:${THEME.HEADING}`}>
-                                            WebbDevelopment
+                                            className={`hover:${THEME.HEADING} whitespace-nowrap`}>
+                                            Web Development
                                         </NavLink>
                                     </div>
                                     <div>
                                         <NavLink
                                             to="/Andriod"
-                                            className={`hover:${THEME.HEADING}`}>
-                                            AndroidDevelopment
+                                            className={`hover:${THEME.HEADING} whitespace-nowrap`}>
+                                            Android Development
                                         </NavLink>
                                     </div>
                                     <div>
                                         <NavLink
                                             to="/ios"
-                                            className={`hover:${THEME.HEADING}`}>
-                                            IOSDevelopment
+                                            className={`hover:${THEME.HEADING} whitespace-nowrap`}>
+                                            IOS Development
                                         </NavLink>
                                     </div>
                                     <div>
                                         <NavLink
                                             to="/seo"
-                                            className={`hover:${THEME.HEADING}`}>
+                                            className={`hover:${THEME.HEADING} whitespace-nowrap`}>
                                             SEO
                                         </NavLink>
                                     </div>
@@ -91,14 +91,14 @@ export const Nav = () => {
                                     <div>
                                         <NavLink
                                             to="/SocialMediaMaketing"
-                                            className={`hover:${THEME.HEADING}`}>
-                                            SocialMediaMarketing
+                                            className={`hover:${THEME.HEADING} whitespace-nowrap`}>
+                                            Social Media Marketing
                                         </NavLink>
                                     </div>
                                     <div>
                                         <NavLink
                                             to="/Financial"
-                                            className={`hover:${THEME.HEADING}`}>
+                                            className={`hover:${THEME.HEADING} whitespace-nowrap`}>
                                             Financials-ERP
                                         </NavLink>
                                     </div>
