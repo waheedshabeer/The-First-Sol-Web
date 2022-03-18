@@ -6,7 +6,7 @@ import {ASSETS} from '../../../Assets/Path'
 import {PortfolioHeading} from '../../../components/Cards/PortfolioHeading'
 export const MyWork = () => {
     return (
-        <div className="mt-20  bg-white min-h-screen space-y-4" id="Work">
+        <div className="mt-20 bg-white min-h-screen space-y-4" id="Work">
             <PortfolioHeading HEADING={'My Work'} />
             <div
                 data-aos="fade-left"
@@ -81,8 +81,8 @@ export const MyWork = () => {
                     </div>
                 </OwlCarousel>
             </div>
-            <div className="flex justify-center w-full ">
-                <button className="rounded-full border-2 border-white absolute px-10 py-2 text-white">
+            <div className="flex justify-center w-full">
+                <button className="rounded-full border-2 border-white absolute px-10 py-2 text-white mt-8">
                     My Works
                 </button>
             </div>
