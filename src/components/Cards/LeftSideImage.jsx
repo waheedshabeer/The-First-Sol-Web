@@ -12,7 +12,7 @@ export const LefSideImage = (props) => {
                         src={props.IMAGE ? props.IMAGE : fallbackImage}
                         alt={''}
                         className="float-left bg-footer-background mr-3 mb-0.5 sm:mr-5 sm:mb-2 w-20 h-20 sm:w-20 sm:h-20 md:w-80 md:h-96 lg:w-96 
-                        duration-1000"
+                        duration-1000 object-cover"
                     />
                     <h1
                         className={`${THEME.TEXT} Poppins-Semibold text-xs sm:text-base md:text-2xl text-justify py-2`}>

@@ -83,64 +83,64 @@ export const OurPortfolio = () => {
             },
         ],
     }
-    const TEAM_DATA = [
-        {
-            IMAGE: ASSETS.TEAM.WAHEED,
-            NAME: 'Waheed Shabeer',
-            CATEGORY: 'Mobile Developer',
-            SUBCATEGORY: 'Senior React Native Developer (CEO)',
-            URL: '',
-        },
-        {
-            IMAGE: ASSETS.TEAM.ASIF_HAYAT,
-            NAME: 'Asif Hayat',
-            CATEGORY: 'Mobile Developer',
-            SUBCATEGORY: 'Senior React Native Developer',
-            URL: '',
-        },
-        {
-            IMAGE: ASSETS.TEAM.TAJASSAM,
-            NAME: 'Tajasam',
-            CATEGORY: 'Mobile Developer',
-            SUBCATEGORY: 'Senior React Native Developer',
-            URL: '',
-        },
-        {
-            IMAGE: ASSETS.TEAM.SHOAIB,
-            NAME: 'Shoaib',
-            CATEGORY: 'Mobile Developer',
-            SUBCATEGORY: 'Senior React Native Developer',
-            URL: '',
-        },
-        {
-            IMAGE: ASSETS.TEAM.NOUMAN,
-            NAME: 'Muhammad Nouman',
-            CATEGORY: 'Mobile Developer',
-            SUBCATEGORY: 'React Native Developer',
-            URL: '',
-        },
-        {
-            IMAGE: ASSETS.TEAM.MUHAMMADBILAL,
-            NAME: 'Muhammad Bilal',
-            CATEGORY: 'Web Developer',
-            SUBCATEGORY: 'Senior React Developer',
-            URL: '',
-        },
-        {
-            IMAGE: ASSETS.TEAM.NASIR,
-            NAME: 'Nisar Ahmed',
-            CATEGORY: 'Web Developer',
-            SUBCATEGORY: 'React Developer',
-            URL: '',
-        },
-        {
-            IMAGE: ASSETS.TEAM.YASIN,
-            NAME: 'Malik Yasin',
-            CATEGORY: 'Business Manager',
-            SUBCATEGORY: '',
-            URL: '',
-        },
-    ]
+    // const TEAM_DATA = [
+    //     {
+    //         IMAGE: ASSETS.TEAM.WAHEED,
+    //         NAME: 'Waheed Shabeer',
+    //         CATEGORY: 'Mobile Developer',
+    //         SUBCATEGORY: 'Senior React Native Developer (CEO)',
+    //         URL: '',
+    //     },
+    //     {
+    //         IMAGE: ASSETS.TEAM.ASIF_HAYAT,
+    //         NAME: 'Asif Hayat',
+    //         CATEGORY: 'Mobile Developer',
+    //         SUBCATEGORY: 'Senior React Native Developer',
+    //         URL: '',
+    //     },
+    //     {
+    //         IMAGE: ASSETS.TEAM.TAJASSAM,
+    //         NAME: 'Tajasam',
+    //         CATEGORY: 'Mobile Developer',
+    //         SUBCATEGORY: 'Senior React Native Developer',
+    //         URL: '',
+    //     },
+    //     {
+    //         IMAGE: ASSETS.TEAM.SHOAIB,
+    //         NAME: 'Shoaib',
+    //         CATEGORY: 'Mobile Developer',
+    //         SUBCATEGORY: 'Senior React Native Developer',
+    //         URL: '',
+    //     },
+    //     {
+    //         IMAGE: ASSETS.TEAM.NOUMAN,
+    //         NAME: 'Muhammad Nouman',
+    //         CATEGORY: 'Mobile Developer',
+    //         SUBCATEGORY: 'React Native Developer',
+    //         URL: '',
+    //     },
+    //     {
+    //         IMAGE: ASSETS.TEAM.MUHAMMADBILAL,
+    //         NAME: 'Muhammad Bilal',
+    //         CATEGORY: 'Web Developer',
+    //         SUBCATEGORY: 'Senior React Developer',
+    //         URL: '',
+    //     },
+    //     {
+    //         IMAGE: ASSETS.TEAM.NASIR,
+    //         NAME: 'Nisar Ahmed',
+    //         CATEGORY: 'Web Developer',
+    //         SUBCATEGORY: 'React Developer',
+    //         URL: '',
+    //     },
+    //     {
+    //         IMAGE: ASSETS.TEAM.YASIN,
+    //         NAME: 'Malik Yasin',
+    //         CATEGORY: 'Business Manager',
+    //         SUBCATEGORY: '',
+    //         URL: '',
+    //     },
+    // ]
 
     const PORFOLIOS = [
         {

@@ -15,8 +15,10 @@ export const MyWork = ({WorkRef}) => {
                     className="owl-theme"
                     loop
                     items={1}
-                    margin={10}
-                    nav>
+                   margin={10}
+                   
+                    nav
+                    >
                     <div className="space-y-4">
                         <img
                             src={ASSETS.MYWORK.RFID}
