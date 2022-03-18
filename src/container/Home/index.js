@@ -1,8 +1,6 @@
 import React from 'react'
 import {ASSETS} from '../../Assets/Path'
 import {Layout} from '../../components/layout'
-// import { AboutUs } from '../AboutUs'
-import {LightSpeed} from 'react-reveal'
 import {ServiceHome} from '../../container/Services/components/services'
 import {THEME} from '../../Assets/theme'
 import {AboutUsHome} from '../AboutUs/components'

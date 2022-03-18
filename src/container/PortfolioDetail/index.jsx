@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import {useParams} from 'react-router-dom'
 import {Footer} from '../PortfolioDetail/Footer/Footer'
 import {developersRef} from '../../firebase/firebase'
@@ -10,10 +10,11 @@ import {AboutMe} from './AboutMe/AboutMe'
 
 export const PortfolioDetail = () => {
     const [Menu, setMenu] = useState(false)
-    const [navColor, setnavColor] = useState('transparent')
+    const [navColor ] = useState('transparent')
     const [userData, setuserData] = useState({})
 
     const {name} = useParams()
+
     useEffect(() => {
         const applyNavColor = () => {
             if (window.innerWidth > 768 && Menu) {
@@ -35,6 +36,18 @@ export const PortfolioDetail = () => {
         }
     }, [name, Menu])
 
+    const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+    // General scroll to element function
+
+    const SelfRef = useRef(null)
+    const ExpertiesRef = useRef(null)
+    const WorkRef = useRef(null)
+    const AboutRef = useRef(null)
+    const OnExecuteMySelf = () => scrollToRef(SelfRef)
+    const OnExecuteExperties = () => scrollToRef(ExpertiesRef)
+    const OnExecuteMyWork = () => scrollToRef(WorkRef)
+    const OnExecuteAboutMe = () => scrollToRef(AboutRef)
+
     const onOpenMenu = () => {
         setMenu(!Menu)
     }
@@ -45,13 +58,16 @@ export const PortfolioDetail = () => {
                 toggleHandler={onOpenMenu}
                 navCol={navColor}
                 fullName={userData?.fullName}
+                OnExecuteAboutMe={OnExecuteAboutMe}
+                OnExecuteMyWork={OnExecuteMyWork}
+                OnExecuteExperties={OnExecuteExperties}
+                OnExecuteMySelf={OnExecuteMySelf}
             />
-            <MySelf userData={userData} />
+            <MySelf userData={userData} SelfRef={SelfRef} />
             <div className="mx-5 sm:mx-10 md:mx-28">
-                <MyExperties userData={userData} />
-                <MyWork />
-                <AboutMe userData={userData} />
-                {/* <ClientTestimonial /> */}
+                <MyExperties userData={userData} ExpertiesRef={ExpertiesRef} />
+                <MyWork WorkRef={WorkRef} />
+                <AboutMe userData={userData} AboutRef={AboutRef} />
             </div>
             <Footer />
         </div>

@@ -1,16 +1,13 @@
 import React from 'react'
 import {ASSETS} from '../../../Assets/Path'
-// import bgimg from "../../assets/images/Myself/calvino-image.png";
-// import bgimg1 from "../../assets/images/Myself/profile-image.webp";
-// import bgimg2 from "../../assets/images/Myself/email-image.webp";
+import {Fade, Bounce} from 'react-reveal'
 
-import {Fade, Bounce, Roll, LightSpeed} from 'react-reveal'
-export const MySelf = ({userData}) => {
-    console.log(userData)
+export const MySelf = ({userData , SelfRef}) => {
+
     return (
         <div
             className="h-screen bg-gradient-to-t from-blue-400 to-white"
-            id="Home">
+            ref={SelfRef}>
             <div className="flex flex-col justify-center md:flex-row items-center h-full px-0 md:px-10 lg:px-24">
                 <div className="">
                     <Fade left>
@@ -23,8 +20,7 @@ export const MySelf = ({userData}) => {
                                               .default
                                 }
                                 alt=""
-                                // style={{borderRadius:'100%', overflow:'hidden', width:'400px', height:'400px', objectFit:'cover', object:'center'}}
-                                className="w-full h-full"
+                                className="w-full h-full object-cover object-start"
                             />
                         </div>
                     </Fade>

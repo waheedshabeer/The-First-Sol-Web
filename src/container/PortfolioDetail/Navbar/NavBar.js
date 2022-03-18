@@ -1,7 +1,16 @@
 import React, {useState} from 'react'
-import {useNavigate} from 'react-router-dom'
-import {MyExperties} from '../MyExperties/MyExperties'
-export const NavBar = ({toggle, toggleHandler, navCol, fullName}) => {
+import {useNavigate, Link} from 'react-router-dom'
+
+export const NavBar = ({
+    toggle,
+    toggleHandler,
+    navCol,
+    fullName,
+    OnExecuteAboutMe,
+    OnExecuteExperties,
+    OnExecuteMySelf,
+    OnExecuteMyWork,
+}) => {
     const [menu, setmenu] = useState()
     const GetFirstName = () => {
         const Name = fullName.split(' ')
@@ -30,17 +39,38 @@ export const NavBar = ({toggle, toggleHandler, navCol, fullName}) => {
             </div>
             {menu && (
                 <div className="md:hidden">
+                    {/* 
+                        OnExecuteAboutMe,
+    OnExecuteExperties,
+    OnExecuteMySelf,
+    OnExecuteMyWork, */}
                     <div className="flex flex-col md:flex-row md:justify-center md:items-center md:space-x-8 font-semibold text-lg">
-                        <a href="#Home">Home</a>
-                        <a href="#Work">Work</a>
-                        <a href="#Service">Service</a>
-                        <a href="#About">About</a>
-                        <a href="#Contact">Contact</a>
+                        <div
+                            className="cursor-pointer"
+                            onClick={OnExecuteMySelf}>
+                            Home
+                        </div>
+                        <div
+                            className="cursor-pointer"
+                            onClick={OnExecuteMyWork}>
+                            Work
+                        </div>
+                        <div
+                            className="cursor-pointer"
+                            onClick={OnExecuteExperties}>
+                            Service
+                        </div>
+                        <div
+                            className="cursor-pointer"
+                            onClick={OnExecuteAboutMe}>
+                            About
+                        </div>
+                        <Link to="/contact-us">Contact</Link>
                     </div>
                     <div>
                         <button
                             className="rounded-full border-2 border-white font-semibold px-10 py-2 hover:bg-white hover:text-aqua-normal"
-                            onClick={() => navigate(`/Contact-Us`)}>
+                            onClick={() => navigate(`/contact-Us`)}>
                             Let,s Talk
                         </button>
                     </div>
@@ -50,11 +80,19 @@ export const NavBar = ({toggle, toggleHandler, navCol, fullName}) => {
                 {fullName ? GetFirstName() : 'Calvino.'}
             </div>
             <div className=" hidden md:flex md:flex-row md:justify-center md:items-center space-x-2 md:space-x-8 font-semibold text-lg">
-                <a href="#Home">Home</a>
-                <a href="#Work">Work</a>
-                <a href="#Service">Service</a>
-                <a href="#About">About</a>
-                <div className='cursor-pointer' onClick={() => navigate(`/contact-Us`)}>Contact</div>
+                <div className="cursor-pointer" onClick={OnExecuteMySelf}>
+                    Home
+                </div>
+                <div className="cursor-pointer" onClick={OnExecuteMyWork}>
+                    Work
+                </div>
+                <div className="cursor-pointer" onClick={OnExecuteExperties}>
+                    Service
+                </div>
+                <div className="cursor-pointer" onClick={OnExecuteAboutMe}>
+                    About
+                </div>
+                <Link to="/contact-us">Contact</Link>
             </div>
             <div>
                 <button

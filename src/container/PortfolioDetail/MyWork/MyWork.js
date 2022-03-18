@@ -4,9 +4,9 @@ import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel/dist/assets/owl.theme.default.css'
 import {ASSETS} from '../../../Assets/Path'
 import {PortfolioHeading} from '../../../components/Cards/PortfolioHeading'
-export const MyWork = () => {
+export const MyWork = ({WorkRef}) => {
     return (
-        <div className="mt-20 bg-white min-h-screen space-y-4" id="Work">
+        <div className="mt-20 bg-white min-h-screen space-y-4" ref={WorkRef}>
             <PortfolioHeading HEADING={'My Work'} />
             <div
                 data-aos="fade-left"

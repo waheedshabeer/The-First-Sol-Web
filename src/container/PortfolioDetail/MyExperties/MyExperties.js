@@ -5,7 +5,7 @@ import { PortfolioHeading } from '../../../components/Cards/PortfolioHeading'
 import { categoriesRef } from '../../../firebase/firebase'
 
 // import { Flip, Fade, Rotate, Zoom, Bounce, Roll , Reveal } from 'react-reveal'
-export const MyExperties = ({ userData }) => {
+export const MyExperties = ({ userData , ExpertiesRef }) => {
     const [ExpertiesList, setExpertiesList] = useState([])
     useEffect(() => {
         aos.init({
@@ -32,7 +32,7 @@ export const MyExperties = ({ userData }) => {
     }, [userData])
 
     return (
-        <div className="mt-20 text-left overflow-hidden" id="Service">
+        <div className="mt-20 text-left overflow-hidden" ref={ExpertiesRef}>
             <PortfolioHeading HEADING={"My Experties"} />
             <div
                 data-aos="fade-left"
