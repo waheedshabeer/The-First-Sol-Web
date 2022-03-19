@@ -1,7 +1,6 @@
 import LOGO from './img/logo.jfif'
 import LAPTOP from './img/laptop2.png'
 import ABOUT_US from './img/about-us.webp'
-import HASH_LOGO from './img/hash-logo.png'
 import ANDROID from './img/Android.jpg'
 import IOS from './img/IOS.jpg'
 import SEO from './img/Seo.jpg'
@@ -40,8 +39,7 @@ import MYSQL from '../Assets/img/Languges/mysql.png'
 export const ASSETS = {
     LOGO,
     LAPTOP,
-    ABOUT_US,
-    HASH_LOGO,
+    ABOUT_US, 
     CAREERS,
     FINANCIAL,
     SOCIAL_MEDIA_MARKETING,

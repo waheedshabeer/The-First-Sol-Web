@@ -7,7 +7,7 @@ export const Ios = () => {
     return (
         <Layout>
             <Heading HEADING={HEADING.IOS.IOS} />
-            <div className="py-14">
+  
                 <LefSideImage
                     IMAGE={IOS.IMAGE}
                     HEADING={IOS.HEADING}
@@ -17,7 +17,7 @@ export const Ios = () => {
                     PARAGRAPH3={IOS.DISCRIPTION.PARAGRAPH3}
                     PARAGRAPH4={IOS.DISCRIPTION.PARAGRAPH4}
                 />
-            </div>
+      
         </Layout>
     )
 }

@@ -1,20 +1,22 @@
 import React from 'react'
-import { ASSETS } from '../../Assets/Path'
-import { THEME } from '../../Assets/theme'
-import {Link} from "react-router-dom"
+import {ASSETS} from '../../Assets/Path'
+import {THEME} from '../../Assets/theme'
+import {Link} from 'react-router-dom'
 export const Footer = () => {
     return (
-        <div className={`${THEME.TEXT} backdrop-blur-sm ${THEME.FOOTER} page-padding py-5 space-y-8`}>
+        <div
+            className={`${THEME.TEXT} backdrop-blur-sm ${THEME.FOOTER} page-padding py-5 space-y-8`}>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8">
                 <div className="flex flex-col col-span-2 pr-4 space-y-4">
                     <div className="h-10 w-10 bg-white rounded-full overflow-hidden">
                         <img src={ASSETS.LOGO} alt="" />
                     </div>
                     <div className="text-sm Poppins-Light">
-                        We've been fulfilling the needs of various businesses
+                        We’ve been fulfilling the needs of various businesses
                         successfully for several years.Be it technology,
-                        education, healthcare, beauty,food,travel,real estate,
-                        you name it,we've got the right software solution for it
+                        education, healthcare, beauty, food, travel, real
+                        estate, you name it, we’ve got the right software
+                        solution for it
                     </div>
                 </div>
                 <div className="text-sm space-y-4 Poppins-Light">
@@ -46,9 +48,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="flex items-center justify-center Poppins-Light">
-                <span className="hidden sm:text-xs">CopyRight</span> 
                 ©
-
                 <span className="Poppins-Bold text-white px-2">
                     thefirstsol.
                 </span>

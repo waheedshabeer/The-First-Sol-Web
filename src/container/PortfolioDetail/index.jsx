@@ -21,7 +21,6 @@ export const PortfolioDetail = () => {
                 setMenu(false)
             }
         }
-
         developersRef
             .where('userName', '==', name)
             .get()

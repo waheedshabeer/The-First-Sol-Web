@@ -15,10 +15,10 @@ export const Services = () => {
                     </div>
                     <div
                         className={`text-center ${THEME.TEXT} text-xs sm:text-base md:text-lg Poppins-Light`}>
-                        At TheFirstSol Technologies we focus on delivering
-                        end-to-end solutions according to customer requirements.
-                        This includes understanding the requirements, planning,
-                        developing, deploying, and maintaining/upgrading the
+                        At The First Sol, we focus on delivering end-to-end
+                        solutions according to customer requirements. This
+                        includes understanding the requirements, planning,
+                        developing, deploying and maintaining/upgrading the
                         solutions we build.
                     </div>
                 </div>

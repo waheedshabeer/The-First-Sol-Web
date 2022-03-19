@@ -8,7 +8,7 @@ export const ContactUs = () => {
         <Layout>
             <div className="">
                 <Heading HEADING={HEADING.CONTACTUS.CONTACTUS} />
-                <form className=" shadow-md rounded sm:px-8 pt-6 pb-8 py-4">
+                <form className=" shadow-md rounded mb-16">
                     <div className="py-4 flex flex-col justify-center items-center space-y-6">
                         <div
                             className={`${THEME.TEXT} text-xl Poppins-Regular`}>

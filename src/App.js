@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react'
 import {ParticlesBackground} from './components/particlesBackground/index'
 import {
-    BrowserRouter,
-    HashRouter,
     Route,
     Routes,
     useLocation,
@@ -22,13 +20,13 @@ import {OurPortfolio} from './container/Portfolio'
 import {PortfolioDetail} from './container/PortfolioDetail'
 
 function App() {
-    // const Location = useLocation()
-    // useEffect(() => {
-    //     window.scrollTo({
-    //         top:0,
-    //         behavior:"smooth"
-    //     })
-    // }, [])
+    const Location = useLocation()
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    }, [Location])
 
     return (
         <div>
@@ -36,7 +34,7 @@ function App() {
                 <ParticlesBackground />
             </div>
 
-            <HashRouter>
+
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about-us" element={<AboutUs />} />
@@ -61,7 +59,7 @@ function App() {
                         element={<PortfolioDetail />}
                     />
                 </Routes>
-            </HashRouter>
+
         </div>
     )
 }

@@ -26,29 +26,28 @@ export const Home = () => {
         {
             IMG: ASSETS.LANGUAGES.MYSQL,
         },
-        
     ]
-    const  responsive={
-        0:{
-            items:2
+    const responsive = {
+        0: {
+            items: 2,
         },
-        600:{
-            items:3
+        600: {
+            items: 3,
         },
-        1000:{
-            items:4
-        }
+        1000: {
+            items: 4,
+        },
     }
     return (
         <Layout>
             <div className="flex min-h-screen py-14">
                 <div className="flex py-2 h-96 w-full ">
                     <div className="flex flex-col  w-8/12 justify-between ">
-                        <div className='space-y-8'>
+                        <div className="space-y-8">
                             <div
                                 className={`flex flex-col space-y-4 w-full text-xl sm:text-2xl md:text-4xl lg:text-5xl text-left Poppins-Semibold ${THEME.TEXT}`}>
-                                <dv className="">Hi,&nbsp;We Welcome You At</dv>
-                                <dv>The First Sol</dv>
+                                <div className="">Hi,&nbsp;We Welcome You At</div>
+                                <div>The First Sol</div>
                             </div>
                             <div className="text-white text-xl Poppins-Regular">
                                 <Typical
@@ -72,17 +71,13 @@ export const Home = () => {
                                 autoplay={true}
                                 autoplaySpeed={250}
                                 navSpeed={250}
-                                responsive={
-                                    responsive
-                                } 
-                            
+                                responsive={responsive}
                                 // autoplayTimeout={1000}
                                 // autoplayHoverPause={true}
-                                dots={false}
-                                >
+                                dots={false}>
                                 {LANGUAGES.map((items, index) => {
                                     return (
-                                        <div className="space-y-4" id={index}>
+                                        <div className="space-y-4" key={index}>
                                             <img
                                                 src={items.IMG}
                                                 alt=""
@@ -95,11 +90,7 @@ export const Home = () => {
                         </div>
                     </div>
                     <div className="w-4/12">
-                        <img
-                            src={ASSETS.LAPTOP}
-                            alt=""
-                            className="md:w-80"
-                        />
+                        <img src={ASSETS.LAPTOP} alt="" className="md:w-80" />
                     </div>
                 </div>
             </div>
