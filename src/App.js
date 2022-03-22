@@ -1,10 +1,6 @@
 import React, {useEffect} from 'react'
 import {ParticlesBackground} from './components/particlesBackground/index'
-import {
-    Route,
-    Routes,
-    useLocation,
-} from 'react-router-dom'
+import {Route, Routes, useLocation} from 'react-router-dom'
 import {Home} from './container/Home'
 import {AboutUs} from './container/AboutUs'
 import {Services} from './container/Services/index'
@@ -18,15 +14,10 @@ import {Careers} from './container/Careers'
 import {ContactUs} from './container/ContactUs'
 import {OurPortfolio} from './container/Portfolio'
 import {PortfolioDetail} from './container/PortfolioDetail'
+import {useScrollToTop} from './utils/hooks/useScrollToTop'
 
 function App() {
-    const Location = useLocation()
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        })
-    }, [Location])
+    useScrollToTop()
 
     return (
         <div>
@@ -34,32 +25,27 @@ function App() {
                 <ParticlesBackground />
             </div>
 
-
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about-us" element={<AboutUs />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/Andriod" element={<Andriod />} />
-                    <Route path="/ios" element={<Ios />} />
-                    <Route
-                        path="/SocialMediaMaketing"
-                        element={<SocialMediaMaketing />}
-                    />
-                    <Route path="/Financial" element={<Financial />} />
-                    <Route
-                        path="/Webdevelopment"
-                        element={<Webdevelopment />}
-                    />
-                    <Route path="/seo" element={<Seo />} />
-                    <Route path="/careers" element={<Careers />} />
-                    <Route path="/portfolio" element={<OurPortfolio />} />
-                    <Route path="/contact-us" element={<ContactUs />} />
-                    <Route
-                        path="/portfolio-detail/:name"
-                        element={<PortfolioDetail />}
-                    />
-                </Routes>
-
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/Andriod" element={<Andriod />} />
+                <Route path="/ios" element={<Ios />} />
+                <Route
+                    path="/SocialMediaMaketing"
+                    element={<SocialMediaMaketing />}
+                />
+                <Route path="/Financial" element={<Financial />} />
+                <Route path="/Webdevelopment" element={<Webdevelopment />} />
+                <Route path="/seo" element={<Seo />} />
+                <Route path="/careers" element={<Careers />} />
+                <Route path="/portfolio" element={<OurPortfolio />} />
+                <Route path="/contact-us" element={<ContactUs />} />
+                <Route
+                    path="/portfolio-detail/:name"
+                    element={<PortfolioDetail />}
+                />
+            </Routes>
         </div>
     )
 }

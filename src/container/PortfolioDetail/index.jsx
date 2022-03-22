@@ -1,42 +1,19 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React, {useRef} from 'react'
 import {useParams} from 'react-router-dom'
 import {Footer} from '../PortfolioDetail/Footer/Footer'
-import {developersRef} from '../../firebase/firebase'
 import {MyExperties} from './MyExperties/MyExperties'
 import {MySelf} from './MySelf/MySelf'
 import {MyWork} from './MyWork/MyWork'
 import {NavBar} from './Navbar/NavBar'
 import {AboutMe} from './AboutMe/AboutMe'
+import {useDeveloperInfo} from '../../utils/hooks/useDeveloperInfo'
+import {useResizeNavMenu} from '../../utils/hooks/useResizeNavMenu'
 
 export const PortfolioDetail = () => {
-    const [Menu, setMenu] = useState(false)
-    const [navColor ] = useState('transparent')
-    const [userData, setuserData] = useState({})
-
     const {name} = useParams()
-
-    useEffect(() => {
-        const applyNavColor = () => {
-            if (window.innerWidth > 768 && Menu) {
-                setMenu(false)
-            }
-        }
-        developersRef
-            .where('userName', '==', name)
-            .get()
-            .then((response) => {
-                response.forEach(async (snapshot) => {
-                    await setuserData(snapshot.data())
-                })
-            })
-        window.addEventListener('resize', applyNavColor)
-        return () => {
-            window.removeEventListener('resize', applyNavColor)
-        }
-    }, [name, Menu])
-
+    const userData = useDeveloperInfo(name)
+    const {Menu, setMenu} = useResizeNavMenu(false)
     const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
-    // General scroll to element function
 
     const SelfRef = useRef(null)
     const ExpertiesRef = useRef(null)
@@ -55,7 +32,6 @@ export const PortfolioDetail = () => {
             <NavBar
                 toggle={Menu}
                 toggleHandler={onOpenMenu}
-                navCol={navColor}
                 fullName={userData?.fullName}
                 OnExecuteAboutMe={OnExecuteAboutMe}
                 OnExecuteMyWork={OnExecuteMyWork}

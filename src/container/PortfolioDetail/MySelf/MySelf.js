@@ -2,8 +2,7 @@ import React from 'react'
 import {ASSETS} from '../../../Assets/Path'
 import {Fade, Bounce} from 'react-reveal'
 
-export const MySelf = ({userData , SelfRef}) => {
-
+export const MySelf = ({userData, SelfRef}) => {
     return (
         <div
             className="h-screen bg-gradient-to-t from-blue-400 to-white"
@@ -11,7 +10,7 @@ export const MySelf = ({userData , SelfRef}) => {
             <div className="flex flex-col justify-center md:flex-row items-center h-full px-0 md:px-10 lg:px-24">
                 <div className="">
                     <Fade left>
-                        <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full object-cover overflow-hidden">
+                        <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-64 md:h-64 lg:w-80 lg:h-80 border-2 border-aqua-normal rounded-full object-cover overflow-hidden">
                             <img
                                 src={
                                     userData?.avatar
@@ -82,10 +81,7 @@ export const MySelf = ({userData , SelfRef}) => {
                 </div>
             </Bounce>
             <img
-                src={
-                    require('../../../Assets/img/Myself/email-image.webp')
-                        .default
-                }
+                src={ASSETS.MYSELF.EMAIL}
                 className="w-12 h-12 mt-6 mx-auto sm:hidden animate-bounce"
                 alt=""
             />

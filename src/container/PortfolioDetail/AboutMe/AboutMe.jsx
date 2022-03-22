@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react'
+import React, {useEffect} from 'react'
 import aos from 'aos'
 import 'aos/dist/aos.css'
 import Slider from 'react-slick'
@@ -7,8 +7,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel/dist/assets/owl.theme.default.css'
 import {PortfolioHeading} from '../../../components/Cards/PortfolioHeading'
-export const AboutMe = ({userData ,AboutRef}) => {
-
+export const AboutMe = ({userData, AboutRef}) => {
     useEffect(() => {
         aos.init({
             duration: 3000,
@@ -18,7 +17,7 @@ export const AboutMe = ({userData ,AboutRef}) => {
         })
         return () => {}
     }, [])
-    
+
     const softwareList = [
         {
             img: 'https://img2.pngio.com/fileadobe-xd-cc-iconsvg-wikimedia-commons-xd-png-1050_1024.png',
@@ -92,10 +91,12 @@ export const AboutMe = ({userData ,AboutRef}) => {
     }
 
     return (
-        <div className="text-left py-24 overflow-hidden text-white" ref={AboutRef}>
-            <h1 data-aos="fade-right" className="headings">
+        <div
+            className="text-left py-24 overflow-hidden text-white"
+            ref={AboutRef}>
+            <div data-aos="fade-right" className="headings">
                 <PortfolioHeading HEADING={'About Me'} />
-            </h1>
+            </div>
             <div className="flex flex-col md:flex-row my-10 md:my-16">
                 <div data-aos="fade-up" className="w-full md:w-1/2">
                     <p className="Poppins-Regular text-base md:text-xl text-justify w-11/12">
