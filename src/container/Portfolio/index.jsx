@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Slider from 'react-slick'
 import {useNavigate, Link} from 'react-router-dom'
 import 'slick-carousel/slick/slick.css'
@@ -9,24 +9,13 @@ import {Layout} from '../../components/layout'
 import {Heading} from '../../components/Cards/Heading'
 import {LazyImage} from '../../components/LazyImage'
 import {fallbackImage} from '../../components/fallbackImage'
-import {developersRef} from '../../firebase/firebase'
+import {useDevelopersInfo} from '../../utils/hooks/useDevelopersInfo'
+import {skeleton} from '../../components/Skeleton'
 
 export const OurPortfolio = () => {
     let navigate = useNavigate()
-    const [teamData, setteamData] = useState([])
-    useEffect(() => {
-        developersRef
-            .where('isDeleted', '==', false)
-            .get()
-            .then((response) => {
-                let arr = []
-                response.forEach(async (snapshot) => {
-                    arr.push(snapshot.data())
-                })
-                setteamData(arr)
-            })
-        return () => {}
-    }, [])
+    const teamData = useDevelopersInfo()
+
     const PORFOLIOS = [
         {
             IMAGE: ASSETS.APPS.FOOD_GHR,
@@ -200,7 +189,6 @@ export const OurPortfolio = () => {
                                 alt={''}
                                 className="object-cover w-full h-32 sm:h-44 md:h-60 lg:h-80 max-h-80 object-center"
                             />
-
                         </div>
                         <div className="text-sm md:text-base Poppins-Medium lg:text-xl text-white hover:text-aqua">
                             {NAME}
@@ -208,9 +196,10 @@ export const OurPortfolio = () => {
                     </div>
                 ))}
             </div>
-            {teamData.length > 0 && (
-                <div className="mb-5 md:mb-10">
-                    <Heading HEADING="Our Team" />
+
+            <div className="mb-5 md:mb-10">
+                <Heading HEADING="Our Team" />
+                {teamData.length > 0 ? (
                     <div className="sm:h-96 flex items-center justify-center py-5 sm:py-10">
                         <Slider
                             {...settings}
@@ -250,8 +239,14 @@ export const OurPortfolio = () => {
                             ))}
                         </Slider>
                     </div>
-                </div>
-            )}
+                ) : (
+                    skeleton({
+                        width: 'w-full',
+                        height: 'h-36 sm:h-80',
+                        shape: '',
+                    })
+                )}
+            </div>
         </Layout>
     )
 }
