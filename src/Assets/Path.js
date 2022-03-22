@@ -39,7 +39,7 @@ import MYSQL from '../Assets/img/Languges/mysql.png'
 export const ASSETS = {
     LOGO,
     LAPTOP,
-    ABOUT_US, 
+    ABOUT_US,
     CAREERS,
     FINANCIAL,
     SOCIAL_MEDIA_MARKETING,
