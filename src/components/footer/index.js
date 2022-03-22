@@ -22,12 +22,26 @@ export const Footer = () => {
                 <div className="text-sm space-y-4 Poppins-Light">
                     <div className="Poppins-Medium">USEFULL LINKS</div>
                     <div className="text-sm flex flex-col space-y-1">
-                        <Link to="/">Home</Link>
-                        <Link to="/about-us">About Us</Link>
-                        <Link to="/services">Services</Link>
-                        <Link to="/andriod">Portfolio</Link>
-                        <Link to="/careers">Careers</Link>
-                        <Link to="/contact-us">Contact Us</Link>
+                        <Link to="/" className="hover:text-aqua-normal">
+                            Home
+                        </Link>
+                        <Link to="/about-us" className="hover:text-aqua-normal">
+                            About Us
+                        </Link>
+                        <Link to="/services" className="hover:text-aqua-normal">
+                            Services
+                        </Link>
+                        <Link to="/andriod" className="hover:text-aqua-normal">
+                            Portfolio
+                        </Link>
+                        <Link to="/careers" className="hover:text-aqua-normal">
+                            Careers
+                        </Link>
+                        <Link
+                            to="/contact-us"
+                            className="hover:text-aqua-normal">
+                            Contact Us
+                        </Link>
                     </div>
                 </div>
 
@@ -40,9 +54,9 @@ export const Footer = () => {
                         <div>Phone:</div>
                         <div>Phone:</div>
                         <div>Email:hello@thefirsrsol.com</div>
-                        <div className="flex gap-x-4 pt-8">
-                            <i className="fab fa-facebook-f hover:text-black"></i>
-                            <i className="fab fa-linkedin-in"></i>
+                        <div className="flex gap-x-4 pt-8 cursor-pointer">
+                            <i className="fab fa-facebook-f hover:text-black hover:text-aqua-normal"></i>
+                            <i className="fab fa-linkedin-in hover:text-aqua-normal"></i>
                         </div>
                     </div>
                 </div>

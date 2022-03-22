@@ -29,10 +29,10 @@ export const Home = () => {
     ]
     const responsive = {
         0: {
-            items: 2,
+            items: 4,
         },
         600: {
-            items: 3,
+            items: 4,
         },
         1000: {
             items: 4,
@@ -40,13 +40,15 @@ export const Home = () => {
     }
     return (
         <Layout>
-            <div className="flex min-h-screen py-14">
-                <div className="flex py-2 h-96 w-full ">
-                    <div className="flex flex-col  w-8/12 justify-between ">
-                        <div className="space-y-8">
+            <div className="flex flex-col sm:min-h-min pt-14">
+                <div className="flex py-2 h-48 sm:h-80 w-full ">
+                    <div className="flex flex-col w-8/12 justify-between ">
+                        <div className="space-y-4">
                             <div
                                 className={`flex flex-col space-y-4 w-full text-xl sm:text-2xl md:text-4xl lg:text-5xl text-left Poppins-Semibold ${THEME.TEXT}`}>
-                                <div className="">Hi,&nbsp;We Welcome You At</div>
+                                <div className="">
+                                    Hi,&nbsp;We Welcome You At
+                                </div>
                                 <div>The First Sol</div>
                             </div>
                             <div className="text-white text-xl Poppins-Regular">
@@ -62,38 +64,39 @@ export const Home = () => {
                                 />
                             </div>
                         </div>
-                        <div className="w-3/4 mt-10">
-                            <OwlCarousel
-                                className="owl-theme "
-                                items={4}
-                                loop
-                                margin={12}
-                                autoplay={true}
-                                autoplaySpeed={250}
-                                navSpeed={250}
-                                responsive={responsive}
-                                // autoplayTimeout={1000}
-                                // autoplayHoverPause={true}
-                                dots={false}>
-                                {LANGUAGES.map((items, index) => {
-                                    return (
-                                        <div className="space-y-4" key={index}>
-                                            <img
-                                                src={items.IMG}
-                                                alt=""
-                                                className="rounded-md sm:rounded h-10 w-10 sm:h-20 sm:w-20 sm:object-cover cursor-pointer"
-                                            />
-                                        </div>
-                                    )
-                                })}
-                            </OwlCarousel>
-                        </div>
                     </div>
                     <div className="w-4/12">
                         <img src={ASSETS.LAPTOP} alt="" className="md:w-80" />
                     </div>
                 </div>
+                <div className="w-full py-4 md:w-1/2">
+                    <OwlCarousel
+                        className="owl-theme "
+                        items={4}
+                        loop
+                        margin={12}
+                        autoplay={true}
+                        autoplaySpeed={250}
+                        navSpeed={250}
+                        responsive={responsive}
+                        // autoplayTimeout={1000}
+                        // autoplayHoverPause={true}
+                        dots={false}>
+                        {LANGUAGES.map((items, index) => {
+                            return (
+                                <div className="space-y-4" key={index}>
+                                    <img
+                                        src={items.IMG}
+                                        alt=""
+                                        className="rounded sm:rounded h-16 sm:h-20 sm:w-20 object-cover sm:object-cover cursor-pointer"
+                                    />
+                                </div>
+                            )
+                        })}
+                    </OwlCarousel>
+                </div>
             </div>
+
             <AboutUsHome />
             <ServiceHome />
         </Layout>
