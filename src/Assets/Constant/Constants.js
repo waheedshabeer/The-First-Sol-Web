@@ -101,7 +101,7 @@ export const CAREERS = {
 export const HEADING = {
 
     SARVICES: {
-        SARVICES: "Sarvices"
+        SARVICES: "Services"
     },
     ABOUT_US: {
         ABOUT_US: "About US"

@@ -2,10 +2,9 @@ import React from 'react'
 import {THEME} from '../../Assets/theme'
 import {fallbackImage} from '../fallbackImage'
 import {LazyImage} from '../LazyImage'
-
 export const LefSideImage = (props) => {
     return (
-        <div className="flex flex-col py-0 md:py-16">
+        <div className="flex flex-col">
             <div className="">
                 <LazyImage
                     src={props.IMAGE ? props.IMAGE : fallbackImage}
